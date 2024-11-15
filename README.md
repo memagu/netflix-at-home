@@ -2,6 +2,10 @@
 
 A nearly fully preconfigured, Docker-based [*arr-stack](https://wiki.servarr.com/) and [Jellyfin](https://jellyfin.org/) setup for seamless streaming of movies, TV shows, music, and books.
 
+## Usage
+- Use **Jellyfin** to view media.
+- Add new media using **Radarr (movies)**, **Sonarr (shows)**, **Lidarr (movies)**, or **Readarr (books)**. 
+
 ## Web Endpoints
 - [Jellyfin (Media server)](http://localhost:8096/)
 
@@ -15,10 +19,6 @@ A nearly fully preconfigured, Docker-based [*arr-stack](https://wiki.servarr.com
 
 - [Prowlarr (Indexers)](http://localhost:9696/)
 - [qBittorrent (Download client)](http://localhost:8080/)
-
-## Usage
-- Use **Jellyfin** to view media.
-- Add new media using **Radarr (movies)**, **Sonarr (shows)**, **Lidarr (movies)**, or **Readarr (books)**. 
 
 ## Default Credentials
 - Username: `hey`
