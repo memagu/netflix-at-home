@@ -45,7 +45,7 @@ A nearly fully preconfigured, Docker-based [*arr-stack](https://wiki.servarr.com
     $ docker-compose up -d --remove-orphans
     ```
 3. Download and install a [Jellyfin client](https://jellyfin.org/downloads/).
-4. Add the media server running at [http://localhost:8096/](http://localhost:8096/) to the client.
+4. Add the media server running at `localhost:8096` to the client.
    
 ## Configuration
 
