@@ -4,6 +4,7 @@
 *.db-wal
 *.db-shm
 *.pid
+config/prowlarr/Definitions/*
 
 downloads/
 media/
