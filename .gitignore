@@ -1,6 +1,9 @@
 **/*log*
 **/*cache*
 **/Sentry/
+*.db-wal
+*.db-shm
+*.pid
 
 downloads/
 media/
