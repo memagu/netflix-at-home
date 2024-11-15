@@ -1,3 +1,7 @@
+<p align="center" justify="center">
+    <img src="./netflix-at-home.png">
+</p>
+
 # netflix-at-home
 
 A nearly fully preconfigured, Docker-based [*arr-stack](https://wiki.servarr.com/) and [Jellyfin](https://jellyfin.org/) setup for seamless streaming of movies, TV shows, music, and books.
