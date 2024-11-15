@@ -12,7 +12,7 @@
   <ThrottleDelaySeconds>180</ThrottleDelaySeconds>
   <EnableSegmentDeletion>false</EnableSegmentDeletion>
   <SegmentKeepSeconds>720</SegmentKeepSeconds>
-  <HardwareAccelerationType>vaapi</HardwareAccelerationType>
+  <HardwareAccelerationType>none</HardwareAccelerationType>
   <EncoderAppPathDisplay>/usr/lib/jellyfin-ffmpeg/ffmpeg</EncoderAppPathDisplay>
   <VaapiDevice>/dev/dri/renderD128</VaapiDevice>
   <QsvDevice />
