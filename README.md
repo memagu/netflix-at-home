@@ -22,7 +22,7 @@ A nearly fully preconfigured, Docker-based [*arr-stack](https://wiki.servarr.com
 
 ## Default Credentials
 - Username: `hey`
-- Username: `lemmein`
+- Password: `lemmein`
 
 ## Prerequisites
 - Docker
@@ -30,7 +30,7 @@ A nearly fully preconfigured, Docker-based [*arr-stack](https://wiki.servarr.com
 
 ## Installation
 1. Clone this repo
-2. Run `docker compose up -d`
+2. Run `docker-compose up -d --remove-orphans`
 
 ## Configuration
 
