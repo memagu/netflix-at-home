@@ -33,6 +33,7 @@ A nearly fully preconfigured, Docker-based [*arr-stack](https://wiki.servarr.com
 ## Prerequisites
 - ### Docker
     - Must be ran with the WSL 2 backend if on Windows. Please refer to: [Docker WSL 2](https://docs.docker.com/desktop/features/wsl/).
+    - Check `Enable host networking` under `Settings > Resources > Network`.
 
 ## Installation
 1. Clone this repository:
