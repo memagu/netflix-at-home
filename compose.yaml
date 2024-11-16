@@ -14,13 +14,12 @@ services:
     volumes:
       - ./config/qbittorrent:/config
       - ./downloads:/downloads
-    ports:
-      - 8080:8080
-      - 6881:6881
-      - 6881:6881/udp
+    # ports:
+    #   - 8080:8080
+    #   - 6881:6881
+    #   - 6881:6881/udp
     restart: unless-stopped
-    networks:
-      - arrnet
+    network_mode: host
 
   # Indexers
   prowlarr:
@@ -35,8 +34,6 @@ services:
     ports:
       - 9696:9696
     restart: unless-stopped
-    networks:
-      - arrnet
 
   # Movies
   radarr:
@@ -53,8 +50,6 @@ services:
     ports:
       - 7878:7878
     restart: unless-stopped
-    networks:
-      - arrnet
     depends_on:
       - prowlarr
       - qbittorrent
@@ -74,8 +69,6 @@ services:
     ports:
       - 8989:8989
     restart: unless-stopped
-    networks:
-      - arrnet
     depends_on:
       - prowlarr
       - qbittorrent
@@ -95,8 +88,6 @@ services:
     ports:
       - 6767:6767
     restart: unless-stopped
-    networks:
-      - arrnet
     depends_on:
       - prowlarr
       - qbittorrent
@@ -116,8 +107,6 @@ services:
     ports:
       - 8686:8686
     restart: unless-stopped
-    networks:
-      - arrnet
     depends_on:
       - prowlarr
       - qbittorrent
@@ -137,8 +126,6 @@ services:
     ports:
       - 8787:8787
     restart: unless-stopped
-    networks:
-      - arrnet
     depends_on:
       - prowlarr
       - qbittorrent
@@ -158,9 +145,3 @@ services:
       - 8096:8096
       - 8920:8920 # Optional: https
     restart: unless-stopped
-    networks:
-      - arrnet
-    
-networks:
-  arrnet:
-    driver: bridge
