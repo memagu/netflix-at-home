@@ -53,6 +53,8 @@ services:
     depends_on:
       - prowlarr
       - qbittorrent
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   # Shows
   sonarr:
@@ -72,6 +74,8 @@ services:
     depends_on:
       - prowlarr
       - qbittorrent
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   # Subtitles
   bazarr:
@@ -91,6 +95,8 @@ services:
     depends_on:
       - prowlarr
       - qbittorrent
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   # Music
   lidarr:
@@ -110,6 +116,8 @@ services:
     depends_on:
       - prowlarr
       - qbittorrent
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   # Books
   readarr:
@@ -129,6 +137,8 @@ services:
     depends_on:
       - prowlarr
       - qbittorrent
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   # Media server
   jellyfin:
